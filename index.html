@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginacion</title>
+    <style>
+        header {
+            max-width: 100%;
+            background-color: blue;
+            height: 50px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            max-width: 100%;
+            min-height: 80vh;
+            border: 1px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .tarjetas {
+            border: 2px solid blue;
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+        }
+        button {
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paginacion</h1>
+    </header>
+    <main class="contenedor" id="container"></main>
+    <footer>
+        <button onclick="anterior()">Anterior</button>
+        <p id="paginas">0</p>
+        <button onclick="next()">Siguiente</button>
+    </footer>
+
+    <script> 
+        const contenedor = document.getElementById('container');
+        let numPage = 1;
+        const page = document.getElementById('paginas');
+        let inicio = 0;
+        let fin = 5;
+        let pag = 5;
+        let cantPaginas;
+        let data;
+
+        let url = "./data.json";
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            
+            cantPaginas = Math.ceil(data.length / fin)
+            page.innerHTML = `<p>${numPage} / ${cantPaginas}</p>`;
+            continuar(data)
+        })
+
+        function continuar(dato){
+            data = dato;
+            const cards = data.slice(inicio,fin)
+            mostrarCards(cards);
+        }
+
+      function  mostrarCards(cards){
+          contenedor.innerHTML = ''
+          cards.forEach((e) => {
+            let html = ' ';
+                html += `<div class="tarjetas">`;       
+                html += `<h3>${e.articulo}</h3>`;
+                html += `<p>${e.marca}</p>`;
+                html += `<p>${e.color}</p>`;
+                html += `<p>${e.numeracion}</p>`;
+                html += `<h3>${e.id}</h3>`
+                html += `</div>`;
+                contenedor.innerHTML += html
+          } )
+        }
+
+        function anterior() {
+            if (inicio > 0 ) {
+            inicio = inicio - 5;
+            fin = fin - 5;
+            numPage = numPage - 1
+            page.innerHTML = `<p>${numPage} / ${cantPaginas}</p>`;
+            continuar(data);
+            }else {
+
+            }
+        }
+        function next(){
+            if(numPage < cantPaginas) {
+            inicio =  fin;
+            fin = fin + 5
+            numPage = numPage + 1
+            page.innerHTML = `<p>${numPage} / ${cantPaginas}</p>`;
+            continuar(data);
+            }else {
+
+            }
+        }
+    </script>
+
+
+</body>
+</html>

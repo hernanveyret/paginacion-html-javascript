@@ -1,0 +1,150 @@
+[
+    {
+        "id":1,
+        "articulo":"320",
+        "marca": "Jaguar",
+        "color":"black",
+        "numeracion":"34 al 47"
+    },
+    {
+        "id":2,
+        "articulo":"320",
+        "marca": "Jaguar",
+        "color":"negro",
+        "numeracion":"34 al 47"
+    },
+    {
+        "id":3,
+        "articulo":"320",
+        "marca": "Jaguar",
+        "color":"blanco",
+        "numeracion":"34 al 47"
+    },
+    {
+        "id":4,
+        "articulo":"320",
+        "marca": "Jaguar",
+        "color":"jean",
+        "numeracion":"34 al 47"
+    },
+    {
+        "id":5,
+        "articulo":"320",
+        "marca": "Jaguar",
+        "color":"rojo",
+        "numeracion":"34 al 47"
+    },
+    {
+        "id":6,
+        "articulo":"128",
+        "marca": "Jaguar",
+        "color":"black",
+        "numeracion":"19 al 26"
+    },
+    {
+        "id":7,
+        "articulo":"128",
+        "marca": "Jaguar",
+        "color":"negro",
+        "numeracion":"19 al 26"
+    },
+    {
+        "id":8,
+        "articulo":"128",
+        "marca": "Jaguar",
+        "color":"blancp",
+        "numeracion":"19 al 26"
+    },
+    {
+        "id":9,
+        "articulo":"3434",
+        "marca": "Airness",
+        "color":"black",
+        "numeracion":"25 al 40"
+    },
+    {
+        "id":10,
+        "articulo":"3434",
+        "marca": "Airness",
+        "color":"rosa",
+        "numeracion":"25 al 40"
+    },
+    {
+        "id":11,
+        "articulo":"3434",
+        "marca": "Airness",
+        "color":"azul",
+        "numeracion":"25 al 40"
+    },
+    {
+        "id":12,
+        "articulo":"3436",
+        "marca": "Airness",
+        "color":"black",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":13,
+        "articulo":"3436",
+        "marca": "Airness",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":14,
+        "articulo":"9000",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":15,
+        "articulo":"9001",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":16,
+        "articulo":"9002",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":17,
+        "articulo":"3436",
+        "marca": "Airness",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":18,
+        "articulo":"9000",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":19,
+        "articulo":"9001",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":20,
+        "articulo":"9002",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    },
+    {
+        "id":21,
+        "articulo":"9002",
+        "marca": "Proforce",
+        "color":"azul",
+        "numeracion":"39 al 44"
+    }
+]
+
